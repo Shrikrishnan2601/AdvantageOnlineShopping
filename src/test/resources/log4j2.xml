@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR">
+    <!-- Appenders define where the log output goes -->
+    <Appenders>
+        <!-- Console Appender for logging to the console -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</pattern>
+            </PatternLayout>
+        </Console>
+
+        <!-- RandomAccessFile Appender for logging to a rolling file with timestamp -->
+        <RandomAccessFile name="FileAppender" 
+                          fileName="logs/selenium-log.log"
+                          immediateFlush="false">
+            <PatternLayout>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</pattern>
+            </PatternLayout>
+        </RandomAccessFile>
+    </Appenders>
+
+    <!-- Loggers define how logging is done for specific packages or classes -->
+    <Loggers>
+        <!-- Root logger logs everything at INFO level -->
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+
+        <!-- Example logger for Selenium-specific classes -->
+        <Logger name="org.openqa.selenium" level="debug" additivity="false">
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+    </Loggers>
+</Configuration>

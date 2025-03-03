@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-03T11:10:58 IST" name="Suite" finished-at="2025-03-03T11:11:04 IST" duration-ms="5887">
+    <groups>
+    </groups>
+    <test started-at="2025-03-03T11:10:58 IST" name="Test" finished-at="2025-03-03T11:11:04 IST" duration-ms="5887">
+      <class name="testcases.BaseClass">
+        <test-method is-config="true" signature="startup(java.lang.String,java.lang.reflect.Method)[pri:0, instance:testcases.BaseClass@11fc564b]" started-at="2025-03-03T11:10:59 IST" name="startup" finished-at="2025-03-03T11:11:03 IST" duration-ms="3936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.BaseClass.loadURL()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="loadURL()[pri:0, instance:testcases.BaseClass@11fc564b]" started-at="2025-03-03T11:11:03 IST" name="loadURL" finished-at="2025-03-03T11:11:04 IST" duration-ms="1694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadURL -->
+      </class> <!-- testcases.BaseClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

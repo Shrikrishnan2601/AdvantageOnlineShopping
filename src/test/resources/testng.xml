@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="false"  >
+  <listeners>
+    <listener class-name="utilities.MyExtentReportManager"/>
+  </listeners>
+  <test name="Test">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testcases.BaseClass"/>
+     <!--   <class name="testcases.NewAccount"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
